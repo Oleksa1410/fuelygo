@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    
+    <title>FuelyGo — Порівняння цін на пальне в Європі | Скоро запуск</title>
+    <meta name="description" content="Шукайте найдешевше пальне в Польщі, Німеччині та по всій Європі. Порівнюйте ціни на АЗС, каву та сервіси в одному додатку FuelyGo.">
+    <meta name="keywords" content="ціни на пальне європа, дешевий бензин польща, АЗС європа ціни, порівняння заправок, FuelyGo">
+    
+    <meta property="og:title" content="FuelyGo — Заправляйтеся вигідно по всій Європі">
+    <meta property="og:description" content="Актуальні ціни на пальне, зручності на АЗС та чесні відгуки. Скоро запуск!">
+    <meta property="og:url" content="https://fuelygo.com/">
+    <meta property="og:type" content="website">
+
+    <style>
+        :root {
+            --primary: #00d1b2; 
+            --accent: #ffdd57; 
+            --bg: #1a1c23;
+            --card-bg: #252833;
+            --text: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 0;
+            color: #fff;
+            letter-spacing: -2px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .status-badge {
+            background: rgba(0, 209, 178, 0.1);
+            color: var(--primary);
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border: 1px solid var(--primary);
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: clamp(1.8rem, 5vw, 2.8rem);
+            max-width: 850px;
+            margin: 15px 0 25px;
+            font-weight: 800;
+        }
+
+        h1 mark {
+            background: none;
+            color: var(--accent);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 950px;
+            margin: 40px 0;
+        }
+
+        .feat-item {
+            background: var(--card-bg);
+            padding: 30px 20px;
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .feat-item:hover {
+            transform: translateY(-8px);
+            border-color: rgba(0, 209, 178, 0.3);
+        }
+
+        .feat-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .cta-section {
+            background: #ffffff;
+            color: #1a1c23;
+            padding: 40px;
+            border-radius: 24px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+            margin-top: 20px;
+        }
+
+        .cta-section h2 {
+            margin-top: 0;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        input[type="email"] {
+            flex: 1;
+            padding: 16px;
+            border: 2px solid #edf2f7;
+            border-radius: 12px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        input[type="email"]:focus {
+            border-color: var(--primary);
+        }
+
+        button {
+            background: var(--bg);
+            color: white;
+            border: none;
+            padding: 16px 28px;
+            border-radius: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: var(--primary);
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.85rem;
+            opacity: 0.5;
+        }
+
+        @media (max-width: 600px) {
+            .input-group { flex-direction: column; }
+            .logo { font-size: 2.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="status-badge">Скоро відкриття</div>
+        <div class="logo">Fuely<span>Go</span></div>
+        
+        <h1>Економте на кожній заправці в <mark>Європі</mark></h1>
+        
+        <p style="max-width: 650px; opacity: 0.8; font-size: 1.1rem;">
+            Ми збираємо ціни на пальне з тисяч АЗС у реальному часі. 
+            Знаходьте найдешевший бензин, дизель або ГБО та обирайте заправки з найкращим сервісом.
+        </p>
+
+        <div class="features">
+            <div class="feat-item">
+                <span class="feat-icon">📉</span>
+                <strong>Чесні ціни</strong>
+                <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.7;">Порівнюйте вартість пального на карті та будуйте вигідні маршрути.</p>
+            </div>
+            <div class="feat-item">
+                <span class="feat-icon">☕</span>
+                <strong>Більше ніж пальне</strong>
+                <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.7;">Дізнайтеся про наявність кафе, паркінгу, душу та Wi-Fi ще до зупинки.</p>
+            </div>
+            <div class="feat-item">
+                <span class="feat-icon">🌍</span>
+                <strong>По всій Європі</strong>
+                <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.7;">Актуальні дані в Польщі, Німеччині, Чехії та інших країнах ЄС.</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Отримайте ранній доступ</h2>
+            <p style="font-size: 0.95rem; color: #4a5568;">Залиште свій email, і ми повідомимо вас про запуск додатку.</p>
+            <form class="input-group" action="#" method="POST">
+                <input type="email" placeholder="Ваш e-mail" required>
+                <button type="submit">Приєднатися</button>
+            </form>
+            <<!--p style="font-size: 0.75rem; margin-top: 15px; color: #718096;">
+                🎁 Перші 500 підписників отримають статус "Gold" назавжди.
+            </p-->
+        </div>
+
+        <footer>
+            &copy; 2026 FuelyGo. Керуйте енергією вашого руху.
+        </footer>
+    </div>
+
+</body>
+</html>
