@@ -1,3 +1,4 @@
 node_modules/
 v1/
-img/ico.png
+#img/ico.png
+autogit.bat
